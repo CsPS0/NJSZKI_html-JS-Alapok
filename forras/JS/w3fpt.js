@@ -6,10 +6,10 @@ function openPage(pageName, elmnt, color) {
     }
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
+        tablinks[i].classList.remove("active");
     }
     document.getElementById(pageName).style.display = "block";
-    elmnt.style.backgroundColor = color;
+    elmnt.classList.add("active");
 }
 
 document.getElementById("defaultOpen").click();

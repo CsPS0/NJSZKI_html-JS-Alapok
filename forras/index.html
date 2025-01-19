@@ -7,18 +7,17 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <!-- Tab buttons -->
-    <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Egyszerű feladatok</button>
-    <button class="tablink" onclick="openPage('News', this, 'green')">Komplex feladatok</button>
-
-    <!-- Home Tab -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="tablink" onclick="openPage('Home', this, '#8B4513')" id="defaultOpen">Egyszerű feladatok</button>
+            <button class="tablink" onclick="openPage('News', this, '#8B4513')">Komplex feladatok</button>
+        </div>
+    </nav>
     <div id="Home" class="tabcontent">
         <h2>Egyszerű feladatok</h2>
         <div id="consoleContainerHome" class="consoleContainer">
             <div id="consoleOutputHome" class="consoleOutput"></div>
         </div>
-        
-        <!-- Home-specific scripts -->
         <script src="./JS/console.js"></script>
         <script>
             rewireLoggingToElement(
@@ -29,15 +28,11 @@
         </script>
         <script src="./JS/basic.js"></script>
     </div>
-
-    <!-- News Tab -->
     <div id="News" class="tabcontent">
         <h2>Komplex feladatok</h2>
         <div id="consoleContainerNews" class="consoleContainer">
             <div id="consoleOutputNews" class="consoleOutput"></div>
         </div>
-        
-        <!-- News-specific scripts -->
         <script src="./JS/console.js"></script>
         <script>
             rewireLoggingToElement(
@@ -48,8 +43,13 @@
         </script>
         <script src="./JS/complex.js"></script>
     </div>
-
-    <!-- Tab switching logic -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                © Made by: CsPS
+            </div>
+        </div>
+    </footer>
     <script src="./JS/w3fpt.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+let complexExercisesInitialized = false;
+
 function openPage(pageName, elmnt, color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -10,6 +12,18 @@ function openPage(pageName, elmnt, color) {
     }
     document.getElementById(pageName).style.display = "block";
     elmnt.classList.add("active");
+
+    if (pageName === 'News' && !complexExercisesInitialized) {
+        initializeComplexExercises();
+        complexExercisesInitialized = true;
+    }
+}
+
+function initializeComplexExercises() {
+    alert("Welcome to Complex Exercises!");
+    const script = document.createElement('script');
+    script.src = './JS/complex.js';
+    document.body.appendChild(script);
 }
 
 document.getElementById("defaultOpen").click();

@@ -83,14 +83,6 @@ forras/
 └── README.md
 ```
 
-## 💻 Böngésző Támogatás
-
-- Chrome: legújabb verzió
-- Firefox: legújabb verzió
-- Safari: legújabb verzió
-- Edge: legújabb verzió
-- Opera: legújabb verzió
-
 ## 🔗 Linkek
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CsPS0)

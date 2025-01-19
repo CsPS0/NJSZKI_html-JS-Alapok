@@ -1,0 +1,45 @@
+#consoleContainer {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+    font-family: monospace;
+}
+.log { color: black; }
+.debug { color: blue; }
+.warn { color: orange; }
+.error { color: red; }
+.info { color: green; }
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+.tablink {
+background-color: #555;
+color: white;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+font-size: 17px;
+width: 25%;
+}
+
+.tablink:hover {
+background-color: #777;
+}
+
+.tabcontent {
+color: white;
+display: none;
+padding: 100px 20px;
+height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}

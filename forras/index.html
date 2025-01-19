@@ -7,10 +7,39 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <div id="consoleContainer">
-        <div id="consoleOutput"></div>
+    <button class="tablink" onclick="openPage('Home', this, 'red')">Egyszerű feladatok</button>
+    <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">Komplex feladatok</button>
+
+    <div id="Home" class="tabcontent">
+        <div id="consoleContainer">
+            <div id="consoleOutput"></div>
+        </div>
+    
+        <script src="./JS/console.js"></script>
+        <script>
+            rewireLoggingToElement(
+                () => document.getElementById("consoleOutput"),
+                () => document.getElementById("consoleContainer"),
+                true
+            );
+        </script>
+        <script src="./JS/basic.js"></script>
     </div>
-    <script src="./JS/script.js"></script>
-    <script src="./JS/console.js"></script>
+    <div id="News" class="tabcontent">
+        <div id="consoleContainer">
+            <div id="consoleOutput"></div>
+        </div>
+    
+        <script src="./JS/console.js"></script>
+        <script>
+            rewireLoggingToElement(
+                () => document.getElementById("consoleOutput"),
+                () => document.getElementById("consoleContainer"),
+                true
+            );
+        </script>
+        <script src="./JS/complex.js"></script>
+    </div>
+    <script src="./JS/w3fpt.js"></script>
 </body>
 </html>

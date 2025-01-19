@@ -1,4 +1,4 @@
-# 🌐 JavaScript Oktató Platform
+# 🌐 JavaScript Alapok
 ![Licensz](https://img.shields.io/badge/licensz-MIT-green)
 ![Verzió](https://img.shields.io/badge/verzió-1.0.0-blue)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
